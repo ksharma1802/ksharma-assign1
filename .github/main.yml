@@ -28,7 +28,7 @@ jobs:
         ECR_REPOSITORY: cats
         IMAGE_TAG: v0.1
       run: |
-        cd catsdogs-cloud9-master/cats/
+        cd catsdogs-cloud9/cats/
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
@@ -46,7 +46,7 @@ jobs:
         ECR_REPOSITORY: dogs
         IMAGE_TAG: v0.1
       run: |
-        cd catsdogs-cloud9-master/dogs/
+        cd catsdogs-cloud9/dogs/
         ls -ltra
         # Docker build
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
