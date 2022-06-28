@@ -26,7 +26,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: ksharma
-        IMAGE_TAG: v0.1
+        IMAGE_TAG: catsv1
       run: |
         cd catsdogs-cloud9/cats/
         ls -ltra
@@ -44,7 +44,7 @@ jobs:
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         ECR_REPOSITORY: ksharma
-        IMAGE_TAG: v0.1
+        IMAGE_TAG: dogsv1
       run: |
         cd catsdogs-cloud9/dogs/
         ls -ltra
